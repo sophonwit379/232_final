@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int i,n,j,tmp;
+    int i,n,j,tmp,max;
     scanf("%d",&n);
     int num[n],count[n][2];
     for(i=0;i<n;i++)
@@ -31,6 +31,15 @@ int main()
     }
     /*for(i=0;i<n;i++)
         printf("%d %d\n",count[i][1],count[i][2]);*/
+    max=count[n-1][1];
+    for(i=0;i<n;i++)
+    {
+        if(max==count[i][1])
+            printf("%d ",count[i][2]);
+    }
+
+
+
 
 
 
