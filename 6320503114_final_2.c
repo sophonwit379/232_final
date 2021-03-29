@@ -20,12 +20,18 @@ int main()
         {
             if(count[j][1]>count[j+1][1])
             {
-                tmp=count[j][1];
+                tmp=count[j+1][1];
                 count[j+1][1]=count[j][1];
-                count[j+1][1]=tmp;
+                count[j][1]=tmp;
+                tmp=count[j+1][2];
+                count[j+1][2]=count[j][2];
+                count[j][2]=tmp;
             }
         }
     }
+    /*for(i=0;i<n;i++)
+        printf("%d %d\n",count[i][1],count[i][2]);*/
+
 
 
 
