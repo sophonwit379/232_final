@@ -9,7 +9,7 @@ int main()
     }
     else if(n%10<c)
     {
-        k=n+c-1;
+        k=n+(c-(n%10));
     }
     else if(n%10==c)
     {
